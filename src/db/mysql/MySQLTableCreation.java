@@ -10,10 +10,7 @@ public class MySQLTableCreation {
 		try {
 			// Step 1 Connect to MySQL.
 			System.out.println("Connecting to " + MySQLDBUtil.URL);
-			//把自己这个db加到driver 列表里
-			// how to insert into the list? 
-			// use a static block to resigter ourself with the drivermanager
-			// will run static block first 
+			
 			Class.forName("com.mysql.cj.jdbc.Driver").getConstructor().newInstance();
 			
 			//match driver
@@ -24,8 +21,8 @@ public class MySQLTableCreation {
 			}
 
 			// Step 2 Drop tables in case they exist.
-			// if has foreign key then need to drop foreign key first , otherise will lose pointer
-			// sequence matters
+			// if has foreign key then need to drop foreign key first , otherwise will lose pointer
+			// drop sequence matters
 			Statement stmt = conn.createStatement();
 			String sql = "DROP TABLE IF EXISTS categories";
 			stmt.executeUpdate(sql);
@@ -64,7 +61,7 @@ public class MySQLTableCreation {
 			
 			sql = "CREATE TABLE categories ("
 					+ "item_id VARCHAR(255) NOT NULL,"
-					+ "category VARCHAR(255) NOT NULL," // password 如何加密的？
+					+ "category VARCHAR(255) NOT NULL," 
 					+ "PRIMARY KEY (item_id, category),"
 					+ "FOREIGN KEY (item_id) REFERENCES items(item_id)"
 					+ ")";

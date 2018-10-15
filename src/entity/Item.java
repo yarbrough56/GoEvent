@@ -19,7 +19,7 @@ public class Item {
 	private double distance;
 
 	/**
-	 * This is a builder pattern in Java.
+	 * Using builder pattern.
 	 */
 	private Item(ItemBuilder builder) {
 		this.itemId = builder.itemId;
