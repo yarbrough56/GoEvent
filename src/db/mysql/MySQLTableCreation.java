@@ -77,8 +77,8 @@ public class MySQLTableCreation {
 					+ ")";
 			stmt.executeUpdate(sql);
 			
-			// Step 4: insert fake user 1111/3229c1097c00d497a0fd282d586be050
-			sql = "INSERT INTO users VALUES ('1111', '3229c1097c00d497a0fd282d586be050', 'Guest', '')";//why values都是单引号
+			// Step 4: insert fake user 1111/3229c1097c00d497a0fd282d586be050 for debugging and testing
+			sql = "INSERT INTO users VALUES ('1111', '3229c1097c00d497a0fd282d586be050', 'Guest', '')";
 			stmt.executeUpdate(sql);
 			
 			System.out.println("Import done successfully");
