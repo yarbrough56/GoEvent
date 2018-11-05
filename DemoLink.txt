@@ -4,7 +4,7 @@ This project "GoEvent" is a personalized recommendation website using tickerMast
 
 I deployed a demo on Amazon AWS
 
-The link is :http://54.214.110.117/GoEvent
+The link is :http://ec2-34-223-224-176.us-west-2.compute.amazonaws.com/GoEvent
 
 When you login, try following username and password for a quick view or you can register by yourself too.
 
