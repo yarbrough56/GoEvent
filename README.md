@@ -19,7 +19,7 @@ The link is :http://ec2-34-223-224-176.us-west-2.compute.amazonaws.com/GoEvent
 
 When you login, try following username and password for a quick view.
 
-username : 1111
-password : 2222
+- username : 1111
+- password : 2222
 
 Thank you for your attention!
